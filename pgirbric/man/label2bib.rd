@@ -1,6 +1,6 @@
 \name{label2bib}
 \alias{label2bib}
-\title{Add labels to a bibteX file}
+\title{Add labels to a BibTeX file}
 \description{Add labels to a BiTeX file}
 
 \usage{label2bib(bib,encoding="UTF-8",stdout=FALSE,...)}
@@ -8,8 +8,8 @@
 \arguments{
   \item{bib}{a BibTeX file.}
   \item{encoding}{encoding to be assumed for input strings (e.g. 'Latin-1' or 'UTF-8').}
-  \item{stdout}{if TRUE send the result to the standard output (to the console screen in principle), if FALSE (the default) to a file (see value)}
-  \item{...}{Additional arguments (e.g. to \code{\link[base]{readLines}}) or \code{\link[base]{writeLines}}) }
+  \item{stdout}{if TRUE send the result to the standard output (to console), if FALSE (the default) to a file (see value)}
+  \item{...}{Additional arguments (e.g. to \code{\link[base]{readLines}} or \code{\link[base]{writeLines}}) }
 }
 
 \details{
@@ -19,10 +19,10 @@ The argument 'encoding' is used to mark character strings as known to be in Lati
 }
 
 \value{ 
-A new file with '_relab' added to the original file name.
+By default (sdtout = FALSE), a new file with '_relab' added to the original file name. If stdout = TRUE, then the output is sent to console.
 }
 
-\seealso{\code{\link[base]{readLines}}}
+\seealso{\code{\link[base]{readLines}}, \code{\link[base]{WriteLines}}}
 
 \examples{
 
