@@ -9,7 +9,7 @@
 *-Ex.R
 
 # Output files from R CMD build
-/*.tar.gz
+# /*.tar.gz
 
 # Output files from R CMD check
 /*.Rcheck/
@@ -31,3 +31,6 @@ vignettes/*.pdf
 # Temporary files created by R markdown
 *.utf8.md
 *.knit.md
+
+# my own scripts
+Scripts*
