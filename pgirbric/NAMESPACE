@@ -1,0 +1,14 @@
+importFrom(graphics, lines, plot, points, text)
+importFrom(stats, update)
+importFrom(utils, read.delim, read.table)
+importFrom(sp, bbox, coordinates, CRS, Line, Lines, Polygon, Polygons, SpatialLines,SpatialLinesDataFrame,SpatialPolygons, SpatialPolygonsDataFrame)
+importFrom(gstat,variogram)
+
+export(label2bib, drawgrid, plot.variogenv, pseudoR2, readBaseCamp, readEtrex, SpatialLinesDataFrameS, SpatialPolygonsDataFrameS, thintrack2,uploadEtrex, variogenv) 
+
+S3method(plot, variogenv)
+
+
+
+
+
