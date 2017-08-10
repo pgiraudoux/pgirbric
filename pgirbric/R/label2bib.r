@@ -1,4 +1,4 @@
-label2bib<-function(bib,encoding="UTF-8",...){
+label2bib<-function(bib,encoding="UTF-8",stdout=FALSE,...) {
 
 myFile<-readLines(bib,encoding=encoding,...)
 
@@ -34,8 +34,10 @@ idac3<-unlist(gregexpr("{",myFile[idrec],fixed=TRUE))
 
 myFile[idrec]<-paste(substr(myFile[idrec],1,idac3),mylabel,",",sep="")
 
-idpt<-gregexpr(".",bib,fixed=TRUE)
-if(idpt[[1]][1]>0) filename<-paste(substr(bib,1,idpt[[1]][1]-1),"_relab",substr(bib,idpt[[1]],nchar(bib)),sep="") else filename<-paste(bib,"_relab",sep="")
+if (stdout) writeLines(myFile,useBytes=TRUE) else {
+  idpt<-gregexpr(".",bib,fixed=TRUE)
+  if(idpt[[1]][1]>0) filename<-paste(substr(bib,1,idpt[[1]][1]-1),"_relab",substr(bib,idpt[[1]],nchar(bib)),sep="") else filename<-paste(bib,"_relab",sep="")
+  writeLines(myFile,filename,useBytes=TRUE)
+}
 
-writeLines(myFile,filename,useBytes=TRUE)
 }
