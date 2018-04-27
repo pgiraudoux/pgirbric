@@ -22,7 +22,7 @@ The argument 'encoding' is used to mark character strings as known to be in Lati
 By default (sdtout = FALSE), a new file with '_relab' added to the original file name. If stdout = TRUE, then the output is sent to console.
 }
 
-\seealso{\code{\link[base]{readLines}}, \code{\link[base]{WriteLines}}}
+\seealso{\code{\link[base]{readLines}}, \code{\link[base]{writeLines}}}
 
 \examples{
 
