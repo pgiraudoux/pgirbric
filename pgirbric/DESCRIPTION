@@ -2,7 +2,7 @@ Package: pgirbric
 Type: Package
 Title: Miscellaneous Functions Related to Data Management and Analysis in Ecology
 Version: 1.1.9
-Date: 2018-04-27
+Date: 2018-05-12
 Author: Patrick Giraudoux <patrick.giraudoux@univ-fcomte.fr>
 Maintainer: Patrick Giraudoux <patrick.giraudoux@univ-fcomte.fr>
 Description: Miscelleneous functions still to improve and not in pgirmess yet.
