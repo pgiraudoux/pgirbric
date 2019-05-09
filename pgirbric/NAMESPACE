@@ -5,7 +5,7 @@ importFrom(sp, bbox, coordinates, CRS, Line, Lines, Polygon, Polygons, SpatialLi
 importFrom(gstat,variogram)
 importFrom(rgdal,readOGR)
 
-export(bbox2SP, label2bib, drawgrid, plot.variogenv, pseudoR2, readBaseCamp, readEtrex, SpatialLinesDataFrameS, SpatialPolygonsDataFrameS, thintrack2,uploadEtrex, variogenv) 
+export(bbox2SP, drawgrid,label2bib, matL, matL.par, plot.variogenv, pseudoR2, readBaseCamp, readEtrex, SpatialLinesDataFrameS, SpatialPolygonsDataFrameS, s2e, thintrack2,uploadEtrex, variogenv) 
 
 S3method(plot, variogenv)
 
