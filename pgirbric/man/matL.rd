@@ -13,7 +13,7 @@
 
 \details{
 
-Construct a Leslie matrix based on age-specific survival (sx) and age specific number of offspring produced per year (bx). sx and bx must have the same length. (e.g. using \code{\link[rgeos]{gIntersection}}). Age specific fecondity (sx*bx) is computed internally.
+Construct a Leslie matrix based on age-specific survival (sx) and age specific number of offspring produced per year (bx). sx and bx must have the same length. Age specific fecondity (sx*bx) is computed internally. Parameters can be extracted using \link[pgirbric]{matL.par}.
 }
 
 \value{ 
