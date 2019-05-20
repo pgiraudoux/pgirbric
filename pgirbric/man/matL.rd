@@ -4,7 +4,7 @@
 \title{Create a Leslie matrix}
 \description{Create a Leslie matrix based on vectors of age specific survival and fecondity}
 
-\usage{matL(sx=c(0.845,rep(0.9328333,25-1)),bx=c(0,0,0,rep(0.25/2,25-3)))}
+\usage{matL(sx=c(0.845,rep(0.9328333,25-1)),bx=c(0,0.5,2,1.5)}
 
 \arguments{
   \item{sx}{a vector of age-specific survival}
@@ -44,6 +44,4 @@ main="Population size variation")
 
 }
 
-
 \keyword{survival}
-
