@@ -1,7 +1,7 @@
 Package: pgirbric
 Type: Package
 Title: Miscellaneous Functions Related to Data Management and Analysis in Ecology
-Version: 1.2.0
+Version: 1.2.1
 Date: 2021-03-05
 Author: Patrick Giraudoux <patrick.giraudoux@univ-fcomte.fr>
 Maintainer: Patrick Giraudoux <patrick.giraudoux@univ-fcomte.fr>
