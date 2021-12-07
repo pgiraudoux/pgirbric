@@ -40,7 +40,7 @@ variogenv(formula, locations, data, R = 99,...)
 
 Pebesma, E.J., 2004. Multivariable geostatistics in S: the gstat package. Computers & Geosciences, 30: 683-691.
 
-Information on the package 'geoR' can be found at: \url{http://www.leg.ufpr.br/geoR}
+Information on the package 'geoR' can be found at: \url{http://www.leg.ufpr.br/geoR/}
 }
 
 \seealso{ \code{\link[pgirbric]{plot.variogenv}}, \code{\link[gstat]{variogram}}, \code{\link[geoR]{variog.mc.env}} }

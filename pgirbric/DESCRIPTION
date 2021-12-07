@@ -1,11 +1,11 @@
 Package: pgirbric
 Type: Package
 Title: Miscellaneous Functions Related to Data Management and Analysis in Ecology
-Version: 1.2.1
-Date: 2021-03-05
+Version: 1.2.2
+Date: 2021-12-07
 Author: Patrick Giraudoux <patrick.giraudoux@univ-fcomte.fr>
 Maintainer: Patrick Giraudoux <patrick.giraudoux@univ-fcomte.fr>
 Description: Miscelleneous functions still to improve and not in pgirmess yet.
-Imports: gstat (>= 1.0-10), rgdal (>= 1.2-18), sp (>= 0.9-97)
+Imports: gstat (>= 1.0-10), rgdal (>= 1.2-18), sp (>= 0.9-97), sf (>= 1.0-4)
 License: GPL (>= 2)
 URL: https://giraudoux.pagesperso-orange.fr/
