@@ -16,11 +16,11 @@
 
 \details{
 
-This function converts a set of coordinates limiting a bounding box into a POLYGON geometry (see \code{\link[sf]{st_sfc}} of class "sfc_POLYGON". It can be used for instance to clip a subset of a larger spatial object (e.g. using \code{\link[sf]{st_intersection}})
+This function converts a set of coordinates limiting a bounding box into a an object of class "sfc_POLYGON"  (see \code{\link[sf]{st_sfc}}). It can be used for instance to clip a subset of a larger spatial object (e.g. using \code{\link[sf]{st_intersection}})
 }
 
 \value{ 
-A simple feature geometry with a coordinate reference system, see \code{\link[sf]{st_sfc}}.
+A simple feature geometry of class "sfc_POLYGON" with a coordinate reference system, see \code{\link[sf]{st_sfc}}.
 }
 
 
