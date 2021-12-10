@@ -22,7 +22,7 @@ uploadEtrex(gpx, wcom=4,type="w")
 Overwrite waypoints having the same name in the GPS
 }
 
-\seealso{ \code{\link[pgirmess]{writeGPX}}, \code{\link[pgirmess]{uploadGPS}}}
+\seealso{ \code{\link[pgirbric]{writeGPX}}, \code{\link[pgirbric]{uploadGPS}}}
 
 \examples{
 

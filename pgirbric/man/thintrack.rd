@@ -1,27 +1,30 @@
-\name{thintrack2}
-\alias{thintrack2}
+\name{thintrack}
+\alias{thintrack}
 
 \title{ Thin a track just keeping the points separated by a user defined minimal distance }
+
 \description{
-  Thin a track stored as a \code{\link[sp]{SpatialPointsDataFrame}} object, just keeping the points separated by a user defined minimal distance
+  Thin a track stored as a \code{\link[sp]{SpatialPointsDataFrame}} object, just keeping the points separated by a user defined minimal distance.
 }
+
 \usage{
-thintrack2(spdf,mindist=100)
+thintrack(spdf,mindist=100)
 }
 
 \arguments{
   \item{spdf}{a \code{\link[sp]{SpatialPointsDataFrame}} of point tracks }
-  \item{mindist}{ minimal distance requested between two points (defaut = 100)}
-
+  \item{mindist}{ minimal distance requested between two points (default = 100)}
 }
+
 \details{
-Tracks downloaded from GPS often provide an unecessary large density of points at irregular distances. This function starts reading from the first point of the track and remove all points within a user specified  minimal distance (USMD), then reads the next point located at a distance equal or larger than the USMD and removes all points within the USMD, and so on...
+Tracks downloaded from GPS often provide an unnecessary large density of points at irregular distances. This function starts reading from the first point of the track and removes all points within a user specified radius (USR), then reads the next point and removes all points within the USR, and so on...
   }
+  
 \value{
-  a \code{\link[sp]{SpatialPointsDataFrame}} with the track thinned.
+  A \code{\link[sp]{SpatialPoints}} object of the track thinned.
 }
 
-\seealso{ \code{\link[pgirmess]{mergeTrackObs}},\code{\link[pgirbric]{thintrack}} }
+\seealso{ \code{\link[pgirmess]{mergeTrackObs}} }
 
 \examples{
 
@@ -45,11 +48,13 @@ mySPDF<-structure(list(x = c(748775, 748807, 748834, 748854, 748871,
 coordinates(mySPDF)<-~x+y
 
 plot(mySPDF,pch=19,cex=0.5)
-plot(thintrack2(mySPDF),pch=19,cex=0.7,col="red",add=TRUE)
+plot(thintrack(mySPDF),pch=19,cex=0.7,col="red",add=TRUE)
 
 plot(mySPDF,pch=19,cex=0.5)
-plot(thintrack2(mySPDF,min=200),pch=19,cex=0.7,col="red",add=TRUE)
+plot(thintrack(mySPDF,min=200),pch=19,cex=0.7,col="red",add=TRUE)
 
 }
+
+
 
 \keyword{ spatial }

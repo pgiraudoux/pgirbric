@@ -4,9 +4,9 @@ importFrom(utils, read.delim, read.table)
 importFrom(sp, bbox, coordinates, CRS, Line, Lines, Polygon, Polygons, SpatialLines,SpatialLinesDataFrame,SpatialPolygons, SpatialPolygonsDataFrame)
 importFrom(gstat, variogram)
 importFrom(rgdal, readOGR)
-importFrom(sf, st_bbox, st_polygon, st_sfc)
+importFrom(pgirmess, polycirc)
 
-export(bbox2SP, bbox2sf, drawgrid, gps2gpx, label2bib, matL, matL.par, plot.variogenv, pseudoR2, readBaseCamp, readEtrex, SpatialLinesDataFrameS, SpatialPolygonsDataFrameS, s2e, thintrack2,uploadEtrex, variogenv) 
+export(bbox2SP, drawgrid, gps2gpx, label2bib, matL, matL.par, plot.variogenv, pseudoR2, readBaseCamp, readEtrex, readVista, SpatialLinesDataFrameS, SpatialPolygonsDataFrameS, s2e, thintrack, thintrack2,uploadEtrex, uploadGPS, variogenv) 
 
 S3method(plot, variogenv)
 

@@ -24,7 +24,7 @@ The function just extracts the coordinates and other variables of the table incl
 }
 
 
-\seealso{ \code{\link[maptools]{readGPS}}, \code{\link[pgirmess]{readVista}}}
+\seealso{ \code{\link[maptools]{readGPS}}, \code{\link[pgirbric]{readVista}}}
 
 
 \keyword{IO}

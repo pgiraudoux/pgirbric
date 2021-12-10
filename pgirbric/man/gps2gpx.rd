@@ -19,7 +19,7 @@ gps2gpx(filename="",i="garmin",f = "usb:", type = "w", invisible = TRUE)
 \details{
 The function calls gpsbabel via the system. The gpsbabel program must be present and on the user's PATH for the function to work see \url{http://www.gpsbabel.org}. A .gpx suffix is added if not included in the filename. The gpx file can then be read e.g. using \code{\link[rgdal]{readOGR}} to a sp spatial object. Ex: readOGR("filename.gpx", "waypoints", drop_unsupported_fields=TRUE), or uploaded to a GPS}
 
-\seealso{ \code{\link[rgdal]{readOGR}},\code{\link[pgirmess]{uploadGPS}}}
+\seealso{ \code{\link[rgdal]{readOGR}},\code{\link[pgirbric]{uploadGPS}}}
 
 \examples{
 

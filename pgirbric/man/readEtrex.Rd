@@ -30,7 +30,7 @@ readEtrex(type = "w", wcom = 4)
 
 \author{ Patrick Giraudoux with Roger Bivand's support }
 
-\seealso{ \code{\link[maptools]{readGPS}}, \code{\link[pgirmess]{readVista}}}
+\seealso{ \code{\link[maptools]{readGPS}}, \code{\link[pgirbric]{readVista}}}
 
 \examples{
 
